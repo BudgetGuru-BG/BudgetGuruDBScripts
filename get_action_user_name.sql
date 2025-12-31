@@ -6,8 +6,9 @@ DECLARE
     _USER_ID TEXT;
     _USER_NAME TEXT;
 BEGIN
-    _USER_ID =     SELECT COALESCE(CURRENT_SETTING('USER.NAME',TRUE),SESSION_USER);
-    _USER_NAME = SELECT u.user_name FROM public.app_users u WHERE u.user_id = v_user_id;
+    _USER_ID =   COALESCE(CURRENT_SETTING('USER.NAME',TRUE),SESSION_USER);
+    
+    SELECT u.user_name INTO _USER_NAME FROM public.app_users u WHERE u.user_id = v_user_id;
 
     RETURN COALESCE(_USER_NAME,_USER_ID,'ADMIN USER');
 END;
