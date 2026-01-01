@@ -1,5 +1,5 @@
 
--- Dropping all the iso_country, iso_country_audit_log tables and iso_country_id_seq, iso_country_audit_log_id_seq sequence
+-- Dropping ISO_COUNTRY, ISO_COUNTRY_AUDIT_LOG tables & ISO_COUNTRY_ID_SEQ, ISO_COUNTRY_AUDIT_LOG_ID_SEQ sequences
 DROP TABLE IF EXISTS PUBLIC.ISO_COUNTRY;
 DROP TABLE IF EXISTS PUBLIC.ISO_COUNTRY_AUDIT_LOG;
 DROP SEQUENCE IF EXISTS PUBLIC.ISO_COUNTRY_ID_SEQ;
