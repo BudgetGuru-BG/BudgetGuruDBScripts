@@ -1,2 +1,2 @@
 # BudgetGuruDBScripts
-DB Scripts For the BudgetGuru Application
+DB Scripts For the BudgetGuru Application.
